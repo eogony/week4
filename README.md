@@ -9,6 +9,8 @@ Javascript application that rolls a virtual dice in randomness. This dice roller
 
 ## Author Information
 
+Name: Elizabeth Ogony
+
 ## Setup instructions
 
 Clone this repository: $ git clone https://github.com/eogony/week4.git Go into the repository: $ cd mini-apps/week4
