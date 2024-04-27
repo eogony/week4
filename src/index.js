@@ -1,12 +1,12 @@
 import "./css/style.css";
 
 let images = [
-  "dice.01.png",
-  "dice.02.png",
-  "dice.03.png",
-  "dice.04.png",
-  "dice.05.png",
-  "dice.06.png",
+  "shaker-01.svg",
+  "shaker-02.svg",
+  "shaker-03.svg",
+  "shaker-04.svg",
+  "shaker-05.svg",
+  "shaker-06.svg",
 ];
 let dice = document.querySelectorAll("img");
 
@@ -21,10 +21,10 @@ function roll() {
     let dieOneValue = Math.floor(Math.random() * 6);
     let dieTwoValue = Math.floor(Math.random() * 6);
     console.log(dieOneValue, dieTwoValue);
-    document.querySelector("#die-1").setAttribute("src", images[dieOneValue]);
-    document.querySelector("#die-2").setAttribute("src", images[dieTwoValue]);
-    document.querySelector("#total").innerHTML =
-      "Your roll is" + (dieOneValue + 1 + (dieTwoValue + 1));
+    document.querySelector("#die1").setAttribute("src", images[dieOneValue]);
+    document.querySelector("#die2").setAttribute("src", images[dieTwoValue]);
+    document.querySelector("#dieTotal").innerHTML =
+      "The roll: " + (dieOneValue + 1 + (dieTwoValue + 1));
   }, 1000);
 }
 roll();
