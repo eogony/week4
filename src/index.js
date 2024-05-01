@@ -1,14 +1,10 @@
-/*const style = require('./css/style.css');*/
-import "bootstrap";
+
+ //import "bootstrap";
 import "./css/style.css";
 
 let images = [
-  "shaker01.png",
-  "shaker02.png",
   "shaker03.png",
-  "shaker04.png",
-  "shaker05.png",
-  "shaker06.png",
+  "shaker04.png"
 ];
 let dice = document.querySelectorAll("img");
 
@@ -30,3 +26,10 @@ function roll() {
   }, 1000);
 }
 roll();
+
+
+
+
+
+
+
