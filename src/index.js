@@ -1,5 +1,6 @@
-import './css/style.css';
 /*const style = require('./css/style.css');*/
+import "bootstrap";
+import "./css/style.css";
 
 let images = [
   "shaker01.png",
@@ -13,11 +14,11 @@ let dice = document.querySelectorAll("img");
 
 function roll() {
   dice.forEach(function (die) {
-    die.classList.add('shake');
+    die.classList.add("shake");
   });
   setTimeout(function () {
     dice.forEach(function (die) {
-      die.classList.remove('shake');
+      die.classList.remove("shake");
     });
     let dieOneValue = Math.floor(Math.random() * 6);
     let dieTwoValue = Math.floor(Math.random() * 6);
