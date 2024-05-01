@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -10,10 +11,18 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/dist/'
   },
+  devtool: 'eval-source-map',    //new line
+  devServer: {
+    static: {
+      directory: path.join(__dirname, "dist"),
+    },
+  },
+ 
   plugins: [
+    new ESLintPlugin(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Week 4 Project',
+      title: 'Dice Game',
       template: './src/index.html',
       inject: 'body'
     })
