@@ -22,11 +22,6 @@ Clone this repository: $ git clone https://github.com/eogony/week4.git Go into t
 
 ## Extensions Used
 
-  - clean-webpack-plugin
-  - css-loader
-  - eslint
-  - html-webpack-plugin
-  - style-loader
   - webpack
   - webpack-cli
 
