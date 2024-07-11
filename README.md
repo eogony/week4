@@ -11,7 +11,7 @@ Name: Elizabeth Adhiambo
 
 ## Setup instructions
 
-Clone this repository: $ git clone https://github.com/eogony/week4.git Go into the repository: $ cd mini-apps/week4
+Clone this repository: $ git clone https://github.com/eogony/week4.git 
 
 ## Technologies Used
 
